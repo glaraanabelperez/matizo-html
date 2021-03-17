@@ -126,7 +126,7 @@ h4{
 }
 
 .boxLogo {
-    display: flex;
+    display: block;
     justify-content: center;
 }
 
