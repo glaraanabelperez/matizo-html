@@ -182,7 +182,7 @@ h4{
 header {
     height: 700px;
     width: 100%;
-    position: relative;
+    position: absolute;
     background-color: #fff;
     padding-top: 25px;
 }
@@ -193,7 +193,7 @@ header {
     align-items: center;
     width: 100%;
     height: auto;
-    margin-top: 10%;
+    margin-top: 2%;
     color: #000;
     overflow: hidden;
 }
