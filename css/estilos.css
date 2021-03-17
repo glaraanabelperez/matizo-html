@@ -128,6 +128,7 @@ h4{
 .boxLogo {
     display: block;
     justify-content: center;
+    height: 10%;
 }
 
 .boxLogo h1>small {
