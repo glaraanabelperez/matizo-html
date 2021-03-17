@@ -126,9 +126,7 @@ h4{
 }
 
 .boxLogo {
-    display: block;
     justify-content: center;
-    height: 10%;
 }
 
 .boxLogo h1>small {
@@ -183,7 +181,7 @@ h4{
 header {
     height: 700px;
     width: 100%;
-    position: absolute;
+    position: relativa;
     background-color: #fff;
     padding-top: 25px;
 }
