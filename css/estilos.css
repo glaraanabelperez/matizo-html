@@ -9,13 +9,13 @@
 html,
 body {
     height: 100%;
-    margin: 5%;
+    margin: 3%;
     background-color: rgb(250, 252, 247);
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 i{
@@ -30,24 +30,31 @@ a:hover {
     text-decoration: none;
 }
 
+.boxLogo h1{
+    font-size: 3rem;
+}
+
 h3 {
-    font-size: 30px;
+    font-size: 2.4rem;
     text-align: center;
     margin-bottom: 20px;
     font-weight: bold;
 }
 main h2{
-    font-size: 22px;
+    font-size: 2.2rem;
 }
 
 p {
-    font-size: 1.2rem;
+    font-size: 1.9rem;
     color: #9c9c9c;
     padding: 1%;
 }
 
 .p-10px {
     padding: 10px;
+}
+h4{
+    font-size: 1.9rem;
 }
 
 /* ------------------------------------------------------------------------------------  */
@@ -200,16 +207,14 @@ header {
 }
 
 .boxHeader .textosHeader h1 {
-    font-size: 35px;
     width: 55%;
     color: gray;
-
 }
 
 .boxHeader .textosHeader p {
-    width: 65%;
+    width: 70%;
     color: #9c9c9c;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 a.botonGetStarted {
@@ -358,7 +363,6 @@ a.botonGetStarted:hover {
 }
 
 .cardFeatures h4 {
-    font-size: 18px;
     font-weight: bold;
 }
 
@@ -384,46 +388,12 @@ a.botonGetStarted:hover {
 
 /* ESTILOS CALL TO ACTION  */
 
-.boxCallToActions {
-    padding-top: 50px;
-    background-color: #fff;
-    overflow: hidden;
-    position: relative;
-    height: 100vh;
-}
-
-.callToActions {
-    padding: 80px 0;
-    display: flex;
-    justify-content: space-around;
-    width: 90%;
-    margin: auto;
-    flex-wrap: wrap;
-}
-
-.imgCallToActions {
-    width: 50%;
-}
-
-.imgCallToActions img {
-    width: 100%;
-    vertical-align: top;
-}
-
-.callToActions .contenido ul li {
-    list-style: none;
-    margin-bottom: 12px;
-    color: #9c9c9c;
-    font-size: 14px;
-}
-
 .contenido {
     width: 50%;
     padding-left: 30px;
 }
 
 .contenido h3 {
-    font-size: 30px;
     text-align: left;
     margin-bottom: 20px;
 }
@@ -434,63 +404,6 @@ a.botonGetStarted:hover {
     color: #9c9c9c;
 }
 
-.boxCardCallToActions {
-    background: #ffffff;
-    width: 38%;
-    border-radius: 3px;
-    padding: 1.25rem;
-    transition: 0.4s;
-    -webkit-box-shadow: 0px 3px 10px -4px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 3px 10px -4px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 3px 10px -4px rgba(0, 0, 0, 0.75);
-    opacity: 0;
-    position: absolute;
-    margin-top: 35px;
-}
-
-.boxCardAnimated {
-    transform: translateX(0);
-    animation: animacion3 0.7s ease-out;
-    position: absolute;
-    opacity: 1;
-}
-
-@keyframes animacion3 {
-    0% {
-        transform: translateX(100%);
-        opacity: 0;
-    }
-}
-
-.boxCardCallToActions img {
-    border-radius: 50%;
-    width: 50px;
-}
-
-.cardCallToActions .boxProfesional {
-    display: flex;
-}
-
-.boxProfesional .imgProfesional {
-    margin-right: 15px;
-}
-
-.boxProfesional .datosProfesional h5 {
-    font-size: 12px;
-    font-weight: bold;
-}
-
-.boxProfesional .datosProfesional h6 {
-    font-size: 11px;
-}
-
-.cardCallToActions p {
-    font-style: italic;
-    font-size: 14px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 100%;
-}
 
 
 /* ESTILOS ABOUT */
@@ -534,7 +447,6 @@ a.botonGetStarted:hover {
 }
 
 .contenidoAbout h3 {
-    font-size: 30px;
     text-align: left;
     margin-bottom: 20px;
 }
@@ -549,7 +461,6 @@ a.botonGetStarted:hover {
 /* ESTILOS ICONS */
 
 #linkServicios{
-    height: 90vh;
     justify-content: space-between;
 }
 .icons{
@@ -565,9 +476,12 @@ a.botonGetStarted:hover {
     justify-content: space-between;
 }
 .block{
-    margin: 4%;
+    margin: 2%;
     list-style: none;
     text-align: center;
+}
+.block p{
+    font-size: 1.5rem;
 }
 
 .lista li i{
@@ -577,12 +491,16 @@ a.botonGetStarted:hover {
 /* ESTILOS SERVICIOS */
 #acordeon{
     width: 100%;
+    height: auto;   
 }
 #acordeon li{
     list-style: none;
 }
 .ocultar{
     display: none;
+}
+.ocultar p{
+    position: sticky;
 }
 .mostrar{
     display: block !important;
@@ -599,7 +517,16 @@ a.botonGetStarted:hover {
     box-shadow: 0px 5px 18px rgba(0, 0, 0, .2);
     transition: all 0.3s ease 0s;
 }
-
+.imgservicios{
+    display: block;
+    text-align: center;
+}
+.imgservicios img {
+    width: 90%;
+    opacity: 1;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
 
 /* ESTILOS CONTACTO */
 
@@ -669,9 +596,7 @@ a.botonGetStarted:hover {
         left: 0;
         margin: 0 auto;
     }
-    .boxHeader h1 {
-        font-size: 40px;
-    }
+
     .boxHeader .textosHeader h1 {
         width: 100%;
     }
@@ -783,9 +708,7 @@ a.botonGetStarted:hover {
     .current {
         border-bottom: 2px solid #f5f5f5;
     }
-    h3 {
-        font-size: 25px;
-    }
+
     /* ESTILOS NAVBAR */
     .navbar-brand {
         display: block;
@@ -803,12 +726,8 @@ a.botonGetStarted:hover {
     .boxHeader .textosHeader {
         width: 90%;
     }
-    .boxHeader h1 {
-        font-size: 20px;
 
-    }
     .boxHeader h2 {
-        font-size: 20px;
         font-weight: 300;
     }
     /* ESTILOS FEATURES */

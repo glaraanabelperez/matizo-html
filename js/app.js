@@ -100,6 +100,7 @@ function ocultarBotoneraInstitucional2(n){
     } else {
         nav2.classList.add ('mostrar')
     };
+    
 }
 function subir2(){
     window.scroll(0,0);
