@@ -30,9 +30,8 @@ a:hover {
     text-decoration: none;
 }
 
- h1{
+ .boxLogo h1{
     font-size: 3rem;
- margin-top: 2%;
 }
 
 h3 {
