@@ -30,7 +30,7 @@ a:hover {
     text-decoration: none;
 }
 
- .boxLogo h1{
+.boxLogo h1{
     font-size: 3rem;
 }
 
@@ -126,6 +126,7 @@ h4{
 }
 
 .boxLogo {
+    display: flex;
     justify-content: center;
 }
 
@@ -181,7 +182,7 @@ h4{
 header {
     height: 700px;
     width: 100%;
-    position: relativa;
+    position: relative;
     background-color: #fff;
     padding-top: 25px;
 }
@@ -192,7 +193,7 @@ header {
     align-items: center;
     width: 100%;
     height: auto;
-    margin-top: 2%;
+    margin-top: 10%;
     color: #000;
     overflow: hidden;
 }
