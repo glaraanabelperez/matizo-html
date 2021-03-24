@@ -6,16 +6,12 @@
     box-sizing: border-box;
 }
 
-html,
-body {
-    height: 100%;
-    margin: 3%;
-    background-color: rgb(250, 252, 247);
-}
-
 body {
     font-family: 'Open Sans', sans-serif;
-    font-size: 20px;
+    font-size: 16px;
+    height: 100%;
+    padding: 1%;
+    background-color: rgb(250, 252, 247);
 }
 
 i{
@@ -45,7 +41,7 @@ main h2{
 }
 
 p {
-    font-size: 2.1rem;
+    font-size: 1.5rem;
     color: #9c9c9c;
     padding: 1%;
 }
@@ -54,15 +50,11 @@ p {
     padding: 10px;
 }
 h4{
-    font-size: 1.9rem;
+    font-size: 1.3rem;
 }
 
+
 /* ------------------------------------------------------------------------------------  */
-.base{
-    background-color: white;
-    width: 100%;
-    padding: 5%;
-}
 .row{
     display: flex;
     flex-direction: row;
@@ -193,14 +185,13 @@ header {
     align-items: center;
     width: 100%;
     height: auto;
-    margin-top: 10%;
     color: #000;
     overflow: hidden;
 }
 
 .boxHeader .textosHeader {
     width: 52%;
-    margin-left: 5%;
+    margin-left: 7%;
     transform: translateY(0);
     opacity: 1;
     animation: animacion2 1s ease-out;
@@ -212,9 +203,9 @@ header {
 }
 
 .boxHeader .textosHeader p {
-    width: 70%;
+    width: 60%;
     color: #9c9c9c;
-    font-size: 1.8rem;
+    font-size: 1.5rem !important;
 }
 
 a.botonGetStarted {
@@ -240,13 +231,18 @@ a.botonGetStarted:hover {
     box-shadow: 0px 15px 18px rgba(32, 191, 107, 0.4);
     transform: translateY(-6px);
 }
-
+.imgHeader{
+    width: 80%;
+}
 .imgHeader img {
     transform: translateX(0);
     opacity: 1;
     animation: animacion1 1s ease-out;
     border-top-left-radius: 1000px;
+    width: 100%;
+
 }
+
 
 @keyframes animacion1 {
     0% {
@@ -307,48 +303,55 @@ a.botonGetStarted:hover {
     background-color: #f6f6f6;
 }
 
-.boxFeatures p{
-    width: 100%;
+.textos-center{
+    width: 60%;
+    text-align: center;
+    margin: auto;
 }
 
 .features {
-    display: block;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-evenly;
-    max-width: 1000px;
     width: 100%;
-    margin: auto;
+    margin: 2;
     overflow: hidden;
     margin-top: 40px;
     
 }
 
-.cardFeatures {
-    background: rgb(250, 252, 247);
-    width: 100%;
+.cardEjemplos {
+    background: white !important;
+    width: 40% !important;
     border-radius: 3px;
     padding: 2.25rem;
     transition: 0.4s;
     margin-bottom: 20px;
 }
-.cardFeatures .imgCard img{
+.cardEjemplos .imgCard {
+    width: 100%;
+}
+.cardEjemplos .imgCard img{
     border-top-right-radius: 100px;
     border-bottom-right-radius: 100px;
+    width: 70%;
 }
-.cardFeatures span {
+.cardEjemplos span {
     box-shadow: 0px 3px 16px rgba(0, 0, 0, 0.2);
 }
 
-.cardFeatures a {
+.cardEjemplos a {
     color: white;
     font-weight: bold;
 }
 
-.cardFeatures:hover {
+.cardEjemplos:hover {
     cursor: pointer;
     transform: scale(0.9, 0.9);
 }
 
-.cardFeatures span {
+.cardEjemplos span {
     background: #208dbf;
     color: #fff;
     width: 35px;
@@ -360,8 +363,13 @@ a.botonGetStarted:hover {
     margin-bottom: 1rem;
 }
 
-.cardFeatures h4 {
+.cardEjemplos h4 {
     font-weight: bold;
+}
+.row-pieCard{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .botonPrecio{
@@ -373,9 +381,10 @@ a.botonGetStarted:hover {
     border: none;
     background-color: #208dbf;
     margin-bottom: 2%;
+    margin-left: 2%;
 }
 
-.cardFeatures p {
+.cardEjemplos p {
     color: #9c9c9c;
 }
 .precio{
@@ -557,206 +566,85 @@ a.botonGetStarted:hover {
 }
 
 /* MEDIA QUERIES */
+/* ------------------------------------------------------------------------------------  */
 
-@media screen and (max-width:800px) {
-    
-    .boxLogo {
-        display: none;
-    }
-    /* ESTILOS NAVBAR */
-    .navbar-brand {
-        display: block;
-    }
-    .nav-link:hover {
-        border-bottom: none;
-    }
-    .nav-item {
-        text-align: center;
-    }
-    .current {
-        border-bottom: 2px solid #f5f5f5;
-    }
-    /* ESTILOS HEADER */
-    header {
-        height: auto;
-    }
-    .boxHeader {
-        flex-wrap: wrap;
-        height: 90vh;
-        flex-direction: column-reverse;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-    }
-    .boxHeader .textosHeader {
-        width: 90%;
-        margin-bottom: 100px;
-        text-align: left;
-        left: 0;
-        margin: 0 auto;
-    }
-
-    .boxHeader .textosHeader h1 {
-        width: 100%;
-    }
-    .boxHeader .textosHeader p {
-        width: 100%;
-        margin: 0 auto;
-        text-align: left;
-    }
-    .boxHeader .imgHeader {
-        top: -40px;
-        right: 0; 
-    }
-    .imgHeader img {
-        width: 45%;
-    }
-    /* ESTILOS FEATURES */
-    .boxFeatures {
-        justify-content: center;
-        align-items: center;
+@media screen and (min-width: 320px) and (max-width: 760px){
+    body {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
         height: 100%;
-    }
-    .features {
-        width: 90%;
-    }
-    .cardFeatures {
-        width: 100%;
-        margin-bottom: 1rem;
-    }
-    /* ESTILOS CALL TO ACTIONS */
-    .boxCallToActions {
-        height: 100%;
-    }
-    .imgCallToActions {
-        width: 100%;
-    }
-    .contenido {
-        width: 80%;
-        padding-left: 0px;
-    }
-    .contenido h3 {
-        text-align: center;
-    }
-    .contenido p {
-        width: 100%;
-        text-align: center;
-    }
-    .contenido ul {
-        text-align: center;
-    }
-    .boxCardAnimated {
-        position: relative;
-        right: 0vh;
-        transform: none;
-        animation: none;
-    }
-    .boxCardCallToActions {
-        width: 100%;
-        margin-top: 42px;
-    }
-    /* ESTILOS ABOUT */
-    .boxAbout {
-        height: 100%;
-    }
-    .about {
-        padding-top: 30px;
-        padding-bottom: 30px;
-    }
-    .imgAbout {
-        width: 100%;
-    }
-    .contenidoAbout {
-        width: 100%;
-        padding-left: 0;
-        text-align: center;
-        margin-top: 40px;
-    }
-    .contenidoAbout h3 {
-        text-align: center;
-        margin-bottom: 20px;
-    }
-    .contenidoAbout p {
-        width: 100%;
-        text-align: center;
-    }
-    /* ESTILOS TESTIMONIAL */
-    .boxSlider {
-        height: 100%;
-    }
-    /* ESTILOS CONTACTO */
-    .contacto {
-        background: white;
-        width: 90%;
-        margin: 30px auto 0 auto;
-    }
-    /* ESTILOS FOOTER */
-    .boxContacto {
-        height: 100%;
-    }
-}
-
-@media screen and (max-width:400px) {
-    .boxLogo {
-        display: none;
-    }
-    .current {
-        border-bottom: 2px solid #f5f5f5;
-    }
-
-    /* ESTILOS NAVBAR */
-    .navbar-brand {
-        display: block;
-    }
-    .nav-link:hover {
-        border-bottom: none;
-    }
-    .nav-item {
-        text-align: center;
-    }
-    /* ESTILOS HEADER */
-    .boxHeader {
-        height: 700px;
-    }
-    .boxHeader .textosHeader {
-        width: 90%;
-    }
-
-    .boxHeader h2 {
-        font-weight: 300;
-    }
-    /* ESTILOS FEATURES */
-    .features {
-        width: 100%;
+        margin: 6%;
+        background-color: rgb(126, 204, 8);
     }
     
-    /* ESTILOS CALL TO ACTIONS */
-    .boxCallToActions {
-        height: 100%;
-    }
-    .boxCardAnimated {
-        position: relative;
-        right: 0vh;
-        transform: none;
-        animation: none;
-    }
-    /* ESTILOS ABOUT */
-    .about {
+    .base{
+        background-color: white;
         width: 100%;
+        padding: 1%;
     }
-    /* ESTILOS CONTACTO */
-    .boxContacto {
-        padding: 50px 30px;
-    }
-    .contacto {
-        width: 100%;
-        margin: 0;
-    }
-    /* ESTILOS FOOTER */
-    footer {
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
+        
+        /**/
+        .boxLogo {
+            display: none;
+        }
+        .current {
+            border-bottom: 2px solid #f5f5f5;
+        }
+    
+        /* ESTILOS NAVBAR */
+        .navbar-brand {
+            display: block;
+        }
+        .nav-link:hover {
+            border-bottom: none;
+        }
+        .nav-item {
+            text-align: center;
+        }
+        /* ESTILOS HEADER */
+    
+        .boxHeader .textosHeader {
+            width: 90%;
+        }
+    
+        .boxHeader h2 {
+            font-weight: 300;
+        }
+        /* ESTILOS FEATURES */
+        .features {
+            width: 100%;
+        }
+        
+        /* ESTILOS CALL TO ACTIONS */
+        .boxCallToActions {
+            height: 100%;
+        }
+        .boxCardAnimated {
+            position: relative;
+            right: 0vh;
+            transform: none;
+            animation: none;
+        }
+        /* ESTILOS ABOUT */
+        .about {
+            width: 100%;
+        }
+        /* ESTILOS CONTACTO */
+        .boxContacto {
+            padding: 50px 30px;
+        }
+        .contacto {
+            width: 100%;
+            margin: 0;
+        }
+        /* ESTILOS FOOTER */
+        footer {
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+    
 }
+
+
