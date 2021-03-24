@@ -29,26 +29,26 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
-                        <a class="nav-link scroll current" href="#linkInicio">INICIO</a>
+                        <p>INICIO<a class="nav-link scroll current" href="#linkInicio"></a></p>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link scroll" href="#linkPaginas">WEB</a>
+                        <p>WEB<a class="nav-link scroll" href="#linkPaginas"></a></p>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link scroll" href="#linkNosotros">NOSOTROS</a>
+                        <p>NOSOTROS<a class="nav-link scroll" href="#linkNosotros"></a></p>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link scroll" href="#linkServicios">SERVICIOS</a>
+                        <p>SERVICIOS<a class="nav-link scroll" href="#linkServicios"></a></p>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link scroll" href="#linkContacto">CONTACTO</a>
+                        <p>CONTACTO<a class="nav-link scroll" href="#linkContacto"></a></p>
                     </li>
 
                 </ul>
             </div>
         </nav>
         <br><br><br>
-        <div class="boxLogo">
+        <div class="boxLogo" id="linkInicio">
             <h1>Matiz Programing<small>.</small></h1>
         </div>
 
@@ -80,19 +80,20 @@
         </div>
     </header>
     <!-- Fin Contenedor Header -->
-
+    <br>
     <!-- Contenedor Main -->
     <main>
         <a id="subir" class="icon-arrow-up scroll" onclick="subir2()"></a>
         <!-- Sección Features -->
         <section class="boxFeatures" id="linkPaginas">
-            <h3>Diseños Web y Tiendas</h3>
+            <div class="base">
+                <h3>Diseños Web y Tiendas</h3>
                 <p class="textos-center">
                     Sitios web estáticos y Autogestionables.
                     Tambien realizamos sistemas de gestion personalizados. 
                     Podes ver alguno de nuestros trabajos.
                 </p>
-
+            </div>
             <div class="features">
                 <div class="cardEjemplos">
                     <i class="fa fa-arrow-down fa-2x" aria-hidden="true"></i>
@@ -133,7 +134,7 @@
                     </p>
                     <h4 class="precio">$12000</h4>
                     <div class="botonPrecio">
-                        <a href="https://glaraanabelperez.github.io/pagEducativaEjemplo/">
+                        <a href="https://glaraanabelperez.github.io/pagEducativaEjemplo-html-css/">
                             VER <i class="fa fa-plus" aria-hidden="true"></i>
                         </a>
                     </div> 
@@ -159,7 +160,7 @@
                     </p>
                     <h4 class="precio">$16000</h4>
                     <div class="botonPrecio">
-                        <a href="https://glaraanabelperez.github.io/plant-solapas2/">
+                        <a href="https://glaraanabelperez.github.io/paginaSimpleAngularLink/">
                             VER <i class="fa fa-plus" aria-hidden="true"></i>
                         </a>
                     </div> 
@@ -222,16 +223,18 @@
 
         <!-- Sección About -->
         <section class="boxFeatures" id="linkNosotros">
-            <h3>Nosotras</h3>
-            <p class="textos-center"> Queremos consolidarnos en el mercado, 
-                <br>con la satisfaccion de nuestros clientes, obteniendo un crecimiento
-                sostenible a largo plazo con confianza y responsabilidad.
-                <br>Filosofía: Creemos en el desarrollo 
-                <br> de nuestros clientes.
-                <br>Buscamos Identidad bajo Respeto, 
-                <br> Compromiso, Confianza y Valor. 
-            </p>
-            <div class="features">
+            <div class="base">
+                <h3>Nosotras</h3>
+                <p class="textos-center">Queremos consolidarnos en el mercado, 
+                    con la satisfaccion de nuestros clientes, obteniendo un crecimiento
+                    sostenible a largo plazo con confianza y responsabilidad.
+                    Filosofía: Creemos en el desarrollo 
+                    de nuestros clientes.
+                    Buscamos Identidad bajo Respeto, 
+                    Compromiso, Confianza y Valor. 
+                </p>
+            </div>
+            <br>
             <div class="base">
                 <h3 style="margin-bottom: 6%;">Porque elegirnos?</h3>
                 <div  class="icons">
@@ -245,7 +248,7 @@
                                 <i class="fa fa-exclamation" aria-hidden="true"></i><br><br>
                                 <p class="text-center">DISEÑO</p>
                             </li>
-                            <li class="block">
+                            <li class="block" style="margin-right: 5%;">
                                 <i class="fa fa-heart" aria-hidden="true"></i><br><br>
                                 <p class="text-center">PASION</p>
                             </li>
@@ -262,19 +265,18 @@
                             </li>
                             <li class="block">
                                 <i class="fa fa-plane" aria-hidden="true"></i><br><br>
-                                <p class="text-center">EN CONSTANTE <br>MOVIMIENTO</p>
+                                <p class="text-center">CONSTANTE <br>MOVIMIENTO</p>
                             </li>
                         </div>
                     </ul>
                 </div>
+            </div>
             </section>
         <!-- Fin Sección About -->
 <br>
         <!-- Sección Testimonios -->
-        <section class="boxFeatures" id="linkServicios">
+        <section class="base" id="linkServicios">
             <h3>Servicios</h3>
-            <div class="features">
-            <div >
                 <div id="acordeon">
                     <ul class="prueba">
                         <div class="block">
@@ -282,7 +284,7 @@
                                 <div style="background-color: rgb(42, 136, 165);" class="botonServicios">DISEÑO WEB</div>
                             </li>
                             <div id="a" class="ocultar">
-                                <p>Diseñamos y desarrollamos sitios web modernos, con diseño responsive 
+                                <p class="textos-center">Diseñamos y desarrollamos sitios web modernos, con diseño responsive 
                                     (adaptado a Smartphones y Tablets). Realizamos todo tipo de sitios 
                                     (autogestionables, institucionales, Promocionales, Landing Pages, etc). 
                                     Contactanos y recibí una propuesta en menos de 24hs.</p>
@@ -293,7 +295,7 @@
                                 <div style="background-color: rgb(42, 165, 118);" class="botonServicios">DISEÑO GRAFICO</div>
                             </li>
                             <div id="b" class="ocultar">
-                                <p>Todas las piezas gráficas necesarias para que tu empresa o 
+                                <p class="textos-center">Todas las piezas gráficas necesarias para que tu empresa o 
                                     producto se desarrolle correctamente en el mercado son importantes. 
                                     Es por eso que al trabajar lo hacemos con compromiso y profesionalismo. Sabemos que lo que tu empresa o producto muestra, es lo que tu empresa o producto es.
                                     Hoy, todo entra primero por los ojos.</p>
@@ -304,7 +306,7 @@
                                 <div style="background-color: rgb(101, 165, 42);" class="botonServicios">MARKETING</div>
                             </li>
                             <div id="c" class="ocultar">
-                                <p>Diseñamos estrategias basadas en las plataformas más exitosas del mercado. 
+                                <p class="textos-center">Diseñamos estrategias basadas en las plataformas más exitosas del mercado. 
                                     Analizamos tu negocio, tus productos, tus competidores y tus potenciales clientes. 
                                     Luego lanzamos campañas publicitarias multiplataforma para lograr los objetivos 
                                     propuestos.</p>
@@ -315,7 +317,7 @@
                                 <div style="background-color: rgb(122, 165, 42);" class="botonServicios">PROGRAMACION</div>
                             </li>
                             <div id="d" class="ocultar">
-                                <p> 
+                                <p class="textos-center"> 
                                   <br> - Desarrollo de pequeños sistemas de gestion.
                                   <br> - Analizamos el problema a resolver.
                                   <br> - Determinar el alcance del problema.
@@ -333,25 +335,22 @@
                     <img src="images/vectores.jpg" alt="">
                 </div>
             </section>
-        <!-- Fin Sección Testimonios -->
+    </main>
+    <br>
+    <footer>
+        <section class="base-contacto" id="linkContacto">
+                <h3>Consultanos</h3>
 
-        <!-- Sección Contacto -->
-        <section class="boxContacto" id="linkContacto">
-            <h3>Consultanos</h3>
-            <div class="container contacto">
                 <a href="https://api.whatsapp.com/send?phone=1144163757">
                     <img src="images/whatsapp.png" width="20%" alt="">
                 </a>
                 <div style="margin-top: 10%;" >Matiz programing</div>
                 <p>glaraanabelperez@gmail.com</p>
-            </div>
-</div>
+            <P class="text-center">
+                <i class="fa fa-handshake-o" aria-hidden="true"></i>
+            </P>
         </section>
-    </main>
-    <footer style="height: 10%;">
-       <P class="text-center">
-           <i class="fa fa-handshake-o" aria-hidden="true"></i>
-       </P>
+       
     </footer>
     <!-- Fin Contenedor Footer -->
 
