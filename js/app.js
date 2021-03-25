@@ -11,14 +11,6 @@ window.onscroll = function() {
         subir.classList.remove("irArriba");
     }
 
-    if (scrollPosY >= 910) {
-        cardAnimated = document.getElementById('cardAnimada');
-        cardAnimated.classList.add("boxCardAnimated");
-    } else {
-        cardAnimated = document.getElementById('cardAnimada');
-        cardAnimated.classList.remove("boxCardAnimated");
-    }
-
 };
 
 
