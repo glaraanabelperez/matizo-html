@@ -31,7 +31,7 @@ a:hover {
     font-size: 3rem;
 }
 h1 {
-    font-size: 2.6rem;
+    font-size: 2.4rem;
     font-weight: bold;
 }
 
@@ -108,6 +108,7 @@ h4{
   .conteiner1 .buttonsLaterales button:hover {
     background-color: #f8efef;
   }
+  
 
 .contenedor {
     padding: 80px;
