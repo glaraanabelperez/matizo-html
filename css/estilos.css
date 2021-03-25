@@ -57,6 +57,11 @@ h4{
     font-size: 1.3rem;
 }
 
+.iconos{
+    width: 35px;
+    height: 35px;
+    margin: 10% 0% 10% 0%;
+}
 
 /* ------------------------------------------------------------------------------------  */
 .row{
@@ -103,6 +108,12 @@ h4{
     border: 0;
     color:  #209abf;
     cursor: pointer;
+  }
+
+  .conteiner1 .buttonsLaterales button .fa-facebook-square{
+      font-size: 35px;
+      height: 20px;
+      width: 20px;
   }
   
   .conteiner1 .buttonsLaterales button:hover {
