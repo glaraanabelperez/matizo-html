@@ -312,9 +312,12 @@ a.botonGetStarted:hover {
 }
 
 .textos-center{
-    width: 60%;
-    text-align: center;
+    width: 99%;
+    padding: 2%;
+    text-align: left;
     margin: auto;
+    border: 1px solid rgb(230, 225, 225);
+
 }
 
 .features {
@@ -331,7 +334,7 @@ a.botonGetStarted:hover {
 
 .cardEjemplos {
     background: white !important;
-    width: 40% !important;
+    width: 30% !important;
     border-radius: 3px;
     padding: 2.25rem;
     transition: 0.4s;
@@ -343,7 +346,7 @@ a.botonGetStarted:hover {
 .cardEjemplos .imgCard img{
     border-top-right-radius: 100px;
     border-bottom-right-radius: 100px;
-    width: 70%;
+    width: 100%;
 }
 .cardEjemplos span {
     box-shadow: 0px 3px 16px rgba(0, 0, 0, 0.2);
@@ -384,12 +387,12 @@ a.botonGetStarted:hover {
     padding: 2%;
     text-align: center;
     border-radius: 10px;
-    width: 16%;
-    height: 60px;
+    width: 19%;
+    height: 30px;
     border: none;
     background-color: #208dbf;
-    margin-bottom: 2%;
-    margin-left: 2%;
+    margin:auto;
+    margin-top: 5%;
 }
 
 .cardEjemplos p {
@@ -400,6 +403,18 @@ a.botonGetStarted:hover {
     margin-bottom: 3%;
 }
 
+.tarjeta-oculta{
+    background-color: white;
+    padding: 5%;
+    width: 90%;
+    border-radius: 20px;
+    margin: auto;
+    position: fixed;
+    top: 35%;
+    left: 5%;
+    border: 2px solid rgb(204, 201, 201);
+
+}
 /* NOSOTRAS */
 .base{
     margin: 5% 0% 5% 0%;
@@ -482,6 +497,21 @@ a.botonGetStarted:hover {
     border-top-right-radius: 100px;
     border-bottom-right-radius: 100px;
 }
+.img-trabajos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 5%;
+    height: 10%;
+}
+.img-trabajos img{
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+    height: 120px;
+    margin: 2%;
+    border: 1px solid gray;
+
+}
 
 /*  ESTILOS FOOTER*/
 
@@ -531,7 +561,7 @@ a.botonGetStarted:hover {
     }
     .textos-center {
         width: 90%;
-        text-align: center;
+        text-align: left;
         margin: auto;
     }
 

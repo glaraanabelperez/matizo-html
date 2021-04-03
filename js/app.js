@@ -97,3 +97,13 @@ function ocultarBotoneraInstitucional2(n){
 function subir2(){
     window.scroll(0,0);
 }
+
+function mostrarTarjeta(n){
+    let tarjetaOculta = document.getElementById(n);
+
+    if (tarjetaOculta.classList.contains('mostrar')){
+        tarjetaOculta.classList.remove('mostrar');
+    } else {
+        tarjetaOculta.classList.add ('mostrar')
+    };
+}
