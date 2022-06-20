@@ -15,6 +15,13 @@ body {
     margin: 5%;
 }
 
+.show{
+    display: block;
+}
+.hidden{
+    display: none;
+}
+
 i{
     color: rgb(248, 225, 95);
 }

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matizo</title>
+    <base href="/">
+    <link rel="icon" type="images/x-icon" href="logo.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" media="screen" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css?family=McLaren&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+
+<body>
+    <!-- Contenedor Header -->
+    <header id="linkHome">
+        <nav id="navFixed" class="navbar fixed-top navbar-expand-lg navbar-light bg-light p-10px">
+            <a class="navbar-brand" href="#linkHome">Matizo<small> diseño web y programacion</small></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                    <li style="margin: auto; margin-right: 30px; font-weight: 600;letter-spacing: 2px;">
+                        <p style="font-size: 30px;">MATIZO</p>
+                    </li>
+                    <li class="nav-item">
+                        <img class="logo" src="images/LOGO12.jpg" alt="">
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">INICIO</a>
+                    </li>
+                   
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+    <br>
+    <main>
+        <h1>Bienvenido</h1>
+        <h2>En esta seccion podra valorar su conocimiento sobre Matizo 
+            y nos ayudarar a mejorar nuesto contenido.
+        Con cada respuesta correcta sumara 5 puntos.</h2>
+        <h2 style="font-weight:600">Respondiendo nos ayuda a saber cuan claros 
+            y comunicativos son los contenidos expuesta en nuestra web</h2>
+            <form name=response >
+                <div class="form-group">
+                    <label for="servicios">A que nos dedicamos?</label>
+                    <input class="form-control" type="text" id="servicio" name="servicio" required>
+                    <label for="mision">cual es nuestra mision?</label>
+                    <input class="form-control" type="text" id="mision" name="mision" required> 
+                    <label for="producto">Que productos realizamos?</label>
+                    <input  class="form-control" type="text" id="producto" name="producto" required> 
+                </div>
+                <input type="button" class="btn btn-primary" value="Guardar" onclick="calcular()"></input> 
+            </form>       
+        <div style="margin-top: 20px; font-weight:600" >
+            <h2 id="result"></h2>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/sesion.js"></script>
+
+</body>
+
+</html>
